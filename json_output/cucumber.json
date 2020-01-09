@@ -1,0 +1,242 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: List of scenarios."
+      },
+      {
+        "line": 4,
+        "value": "#Scenario: Business rule through list of steps with arguments."
+      },
+      {
+        "line": 5,
+        "value": "#Given: Some precondition step"
+      },
+      {
+        "line": 6,
+        "value": "#When: Some key actions"
+      },
+      {
+        "line": 7,
+        "value": "#Then: To observe outcomes or validation"
+      },
+      {
+        "line": 8,
+        "value": "#And,But: To enumerate more Given,When,Then steps"
+      },
+      {
+        "line": 9,
+        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+      },
+      {
+        "line": 10,
+        "value": "#Examples: Container for s table"
+      },
+      {
+        "line": 11,
+        "value": "#Background: List of steps run before each of the scenarios"
+      },
+      {
+        "line": 12,
+        "value": "#\"\"\" (Doc Strings)"
+      },
+      {
+        "line": 13,
+        "value": "#| (Data Tables)"
+      },
+      {
+        "line": 14,
+        "value": "#@ (Tags/Labels):To group Scenarios"
+      },
+      {
+        "line": 15,
+        "value": "#\u003c\u003e (placeholder)"
+      },
+      {
+        "line": 16,
+        "value": "#\"\""
+      },
+      {
+        "line": 17,
+        "value": "## (Comments)"
+      },
+      {
+        "line": 18,
+        "value": "#Sample Feature Definition Template"
+      }
+    ],
+    "line": 20,
+    "elements": [
+      {
+        "line": 24,
+        "name": "Create new Deal page",
+        "description": "",
+        "id": "deals-feature;create-new-deal-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16576363300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user is already on login page",
+            "match": {
+              "location": "dealsTest.user_already_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 45093400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "title of login page is FreeCRM",
+            "match": {
+              "location": "dealsTest.title_of_login_page_FreeCRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4179866600,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user enters username and password",
+            "match": {
+              "location": "dealsTest.user_enters_username_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "rabin2004@yahoo.com",
+                  "SunXiang@20110611"
+                ],
+                "line": 28
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 99010900,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 29,
+                "value": "# test data table \u003d\u003e only for specific line above the table"
+              }
+            ],
+            "line": 30,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "dealsTest.user_clicks_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7389600,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user is on homepage",
+            "match": {
+              "location": "dealsTest.user_is_on_homepage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2064891600,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user moves to new deal page",
+            "match": {
+              "location": "dealsTest.user_moves_to_new_deal_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 958530700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user enters deal details",
+            "match": {
+              "location": "dealsTest.user_enter_deal_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Test deal",
+                  "Mat",
+                  "1000",
+                  "50000"
+                ],
+                "line": 34
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 91066500,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user clicks save",
+            "match": {
+              "location": "dealsTest.user_clicks_save()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 894713500,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "close the browser",
+            "match": {
+              "location": "dealsTest.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 23,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Deals feature",
+    "description": "",
+    "id": "deals-feature",
+    "keyword": "Feature",
+    "uri": "C:/Users/User/Desktop/eclipse/CucumberBDD/src/main/java/features/deals.feature",
+    "tags": [
+      {
+        "line": 19,
+        "name": "@tag"
+      }
+    ]
+  }
+]
